@@ -13,56 +13,22 @@ body, html{
   background-color: rgb(108, 154, 226);
   color: white;
 }
-
+p{
+  color:black:
+}
 a {
   color: white;
   float: right;
 }
 
-.row {
-  padding-right: 0px;
-  margin-right: 0px;
-}
-.hero-image{
-  background-image: url("img/hero.jpg");
-  background-size: cover;
-  height: 50%;
-  padding: 100px;
-
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
+#menu {
+  background-color: chartreuse;
+  height:200px;
 }
 
-.hero-text{
-  text-align: center;
-  color:white;
-}
-
-.orderBtn{
-  padding: 10px 20px;
-  margin: 20px;
-  background-color: rgb(226, 220, 124);
-  border: none;
-    outline:none;
-
-  /*remove grey edge*/
-}
-
-#main {
+#order{
   background-color: yellow;
-  width: 100%
-
-}
-
-h3 {
-  color: red;
-}
-
-#marginal{
-  width:75%;
-  margin: auto;
+  height: 200px;
 }
 .flex-container {
     display: -webkit-flex;
@@ -94,6 +60,3 @@ h3 {
 #copyright{
   background-color: grey;
   margin: auto;
-
-
-}
