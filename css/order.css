@@ -1,5 +1,5 @@
 body, html{
-  color: white;
+  /*color: white;*/
   height: 100%
   width: 100%
   /*margin: 0;*/
@@ -20,6 +20,39 @@ a {
   color: white;
   float: right;
 }
+/* ORDER............................................*/
+#menu-cart{
+  background-color: yellow;
+  width:100%;
+}
+#menuSide{
+  background-color: grey;
+}
+#orderSide{
+  background-color: yellow;
+  
+
+}
+
+.card{
+  
+  width: 200px;
+
+
+}
+
+.red {
+  color: red;
+}
+
+
+
+
+
+
+
+
+/* SORT OUT WHICH IS NOT NEEDED OR GOES INTO NAVBAR.CSS..............................................*/
 
 #menu {
   background-color: chartreuse;
@@ -34,12 +67,9 @@ a {
     display: -webkit-flex;
     display: flex;
     display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: flex-start;
+  justify-content: space-between;
 
-
-    /*height: 250px;*/
-    /*background-color: lightgrey;*/
 }
 .flex-item {
     color: black;
@@ -49,14 +79,18 @@ a {
     margin: 10px;
 }
 
+/*FOOTERS....................*/
 #footer {
-  background-color: orange;
+  background-color: rgb(108, 154, 226)
+
 }
 
-.meh{
-  clear:right;
-}
+
 
 #copyright{
-  background-color: grey;
+  background-color:rgb(25, 73, 150);
   margin: auto;
+}
+#copyrightText{
+  margin: auto;
+}

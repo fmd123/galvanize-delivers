@@ -7,85 +7,78 @@
 
    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
-    <link rel="stylesheet" href="index.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/index.css">
 
   </head>
   <body>
-    <div class = "container-fluid">
+    <div class = "main container-fluid">
 
-      <nav class="navbar navbar-default navbar-fixed-top">
-        <div class="container">
-          <a href="index.html">Galvanize Delivers</a>
-          <a href="order.html">Order Delivery</a>
-        </div>
-      </nav>
-      <div class="hero-image">
-        <div class="hero-text">
-          <h1>Fine Dining, Delivered</h1>
-            <FORM METHOD="get" ACTION="order.html">
-                <INPUT class = "orderBtn" TYPE="submit" VALUE="Place an Order">
-<!--http://www.htmlgoodies.com/tutorials/buttons/article.php/3478871
-    Works but this is probably not best method.  -->
-            </FORM>
-        </div>
-      </div>
-<!--boostrap version..............................Doesn't work yet  -->
-      <!-- <div class="row">
-        <div class="col-sm-1 col-md-2 col-lg-4">
-          <h3>Shop Online</h3>
-          <p>Using our convenient web app, you'll get all the power of gFood without having to call your order in. Order in your pajamas, order 24 hours a day, order on Christmas, we're here to serve you.</p>
-        </div>
-        <div class="col-sm-1 col-md-2 col-lg-4">
-          <h3>Fast Delivery</h3>
-          <p>You've never seen ordering this quick. Our proprietary ordering rocket ship delivery team allows you to spend less time being hungry, and more time doing what matters most to you. We'd ask what that is, but gFood respects your privacy.</p>
-        </div>
-        <div class="col-sm-1 col-md-2 col-lg-4">
-          <h3>Great Deals</h3>
-          <p>Money: You've got it, we want it. But let it never be said we're not incredibly fair! Burger sales? Check. Pizza sales? Check. Burger and pizza sales?? Check, check, check! We seriously can't stop making deals.</p>
-        </div>
-      </div> -->
+          <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+              <a href="index.html">Galvanize Delivers</a>
+              <a href="order.html">Order Delivery</a>
+            </div>
+          </nav>
+          <div class="hero-image">
+            <div class="hero-text">
+              <h1>Fine Dining, Delivered</h1>
+                <FORM METHOD="get" ACTION="order.html">
+                    <INPUT class = "orderBtn" TYPE="submit" VALUE="Place an Order">
+                </FORM>
+            </div>
+          </div>
+          <!--http://www.htmlgoodies.com/tutorials/buttons/article.php/3478871
+              Works but is probably not best method?  -->
 
 <!-- flexbox version............................... -->
-  <div id ="marginal">
-    <div class="flex-container">
-        <div id = "shop" class="flex-item">
-            <h3>Shop Online</h3>
-            <p>Using our convenient web app, you'll get all the power of gFood without having to call your order in. Order in your pajamas, order 24 hours a day, order on Christmas, we're here to serve you.</p>
-      </div>
-      <div id = "fast" class="flex-item">
-            <h3>Fast Delivery</h3>
-            <p>You've never seen ordering this quick. Our proprietary ordering rocket ship delivery team allows you to spend less time being hungry, and more time doing what matters most to you. We'd ask what that is, but gFood respects your privacy.</p>
-      </div>
-      <div id = "great" class="flex-item">
-            <h3>Great Deals</h3>
-            <p>Money: You've got it, we want it. But let it never be said we're not incredibly fair! Burger sales? Check. Pizza sales? Check. Burger and pizza sales?? Check, check, check! We seriously can't stop making deals.</p>
-      </div>
+      <div class ="marginal">
+          <div class="flex-container">
+              <div id = "shop" class="flex-item">
+                  <h3><i class="fa fa-shopping-basket" aria-hidden="true"></i> Shop Online</h3>
+                  <p class = "sell">Using our convenient web app, you'll get all the power of gFood without having to call your order in. Order in your pajamas, order 24 hours a day, order on Christmas, we're here to serve you.</p>
+            </div>
+            <div id = "fast" class="flex-item">
+                  <h3><i class="fa fa-truck" aria-hidden="true"></i> Fast Delivery</h3>
+                  <p class = "sell">You've never seen ordering this quick. Our proprietary ordering rocket ship delivery team allows you to spend less time being hungry, and more time doing what matters most to you. We'd ask what that is, but gFood respects your privacy.</p>
+            </div>
+            <div id = "great" class="flex-item">
+                  <h3><i class="fa fa-usd" aria-hidden="true"></i> Great Deals</h3>
+                  <p class = "sell">Money: You've got it, we want it. But let it never be said we're not incredibly fair! Burger sales? Check. Pizza sales? Check. Burger and pizza sales?? Check, check, check! We seriously can't stop making deals.</p>
+            </div>
 
-  </div>
-</div>
+        </div>
+      </div>
+<!-- FOOTERS....................................... -->
       <footer id = "footer">
-
-        <p>Galvanize Delivers</p>
-        <a href="index.html">Home</a>
-
-        <p class = "meh">Fine Dining, Delivered</p>
-        <a href="order.html">Order Delivery</a>
-
-      <footer id = "copyright" class ="meh">
-        <!--  copyright info-->
-        <p>&copy; 2017 Galvanize Delivers<p>
+          <div class = "marginal">
+            <div class="flex-container">
+                <div class="flex-item">
+                  <p >Galvanize Delivers</p>
+                  <p>Fine Dining, Delivered.</p>
+                </div>
+                <div class="flex-item">
+                  <a href="index.html">Home</a>
+                  <br>
+                  <a href="order.html">Order Delivery</a>
+                </div>
+            </div>
+        </div>
       </footer>
-
-
-
+  </div>
+      <footer id = "copyright"onloadedmetadata="">
+        <!--  copyright info-->
+        <p id = "copyrightText"> &copy; 2017 Galvanize Delivers<p>
+     
       </footer>
 
     </div>
 
-   <!-- Optional JavaScript -->
+
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
-  </body>
+
+    </body>
 </html>
