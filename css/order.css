@@ -1,68 +1,85 @@
+/*
+/* ORDER............................................*/
+.card {
+  color:black;
+}
+
+
+/*DO NOT TOUCH ANYTHING BELOW THIS LINE*/
+/*TO DO: MAKE NAV COLLAPSIBLE & ADD A HAMBURGER TO HTML NAV*/
+
 body, html{
-  /*color: white;*/
+  /*color: black;*/
   height: 100%
   width: 100%
-  /*margin: 0;*/
-  /*padding: 0;*/
-  /*things to do:
-  get rid of the white margin
-  */
+}
+
+.main.container-fluid{
+  margin:0;
+  padding: 0;
 }
 
 .navbar{
   background-color: rgb(108, 154, 226);
-  color: white;
+  color: black;
 }
-p{
-  color:black:
-}
+
 a {
-  color: white;
+
+  color: black;
   float: right;
 }
-/* ORDER............................................*/
-#menu-cart{
-  background-color: yellow;
-  width:100%;
-}
-#menuSide{
-  background-color: grey;
-}
-#orderSide{
-  background-color: yellow;
-  
 
+p {
+  color:black;
 }
 
-.card{
-  
-  width: 200px;
+.row {
+  padding-right: 0px;
+  margin-right: 0px;
+}
+/*.hero-image{
 
+  background-image: url("../img/hero.jpg");
+  background-size: cover;
+  height: 50%;
+  padding: 100px;
 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
 }
 
-.red {
+.hero-text{
+  text-align: center;
+  color:white;
+}*/
+
+/*.orderBtn{
+  color: white;
+  padding: 10px 20px;
+  margin: 20px;
+  background-color: red;
+  border: none;
+  outline:none;
+
+  /*remove grey edge*/
+
+/*MAIN 3-COL FLEXBOX*/
+/*.marginal {
+  width: 75%;
+  margin:auto;
+}*/
+
+h3 {
   color: red;
 }
-
-
-
-
-
-
-
-
-/* SORT OUT WHICH IS NOT NEEDED OR GOES INTO NAVBAR.CSS..............................................*/
-
-#menu {
-  background-color: chartreuse;
-  height:200px;
+h2{
+  color:black;
 }
 
-#order{
-  background-color: yellow;
-  height: 200px;
-}
+/*https://www.w3schools.com/cssref/playit.asp?filename=playcss_align-items&preval=flex-start*/
 .flex-container {
     display: -webkit-flex;
     display: flex;
@@ -70,13 +87,12 @@ a {
   align-items: flex-start;
   justify-content: space-between;
 
+
 }
 .flex-item {
     color: black;
-    /*background-color: cornflowerblue;*/
     width: 33%;
-    /*height: 100px;*/
-    margin: 10px;
+    margin: 0px;
 }
 
 /*FOOTERS....................*/
@@ -94,3 +110,4 @@ a {
 #copyrightText{
   margin: auto;
 }
+*/

@@ -56,15 +56,11 @@ a {
   border: none;
   outline:none;
 
-  /*remove grey edge*/
 }
 /*MAIN 3-COL FLEXBOX*/
 .marginal {
   width: 75%;
   margin:auto;
-
-
-
 }
 
 h3 {

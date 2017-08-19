@@ -5,87 +5,118 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-   <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+<!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<!--Font Awesome  -->
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/order.css">
+<!-- index.css stylesheet  -->
+    <!-- <link rel="stylesheet" href="css/index.css"> -->
+
+
+    </script>
 
   </head>
   <body>
-    <div class = "container-fluid">
+    <div class = "main container-fluid">
 
-<!-- NAVBAR............................................................ -->
+          <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+              <a href="index.html">Galvanize Delivers</a>
+              <a href="order.html">Order Delivery</a>
+            </div>
+          </nav>
 
-        <nav class="navbar navbar-default navbar-fixed-top">
-          <div class="container">
-            <a href="index.html">Galvanize Delivers</a>
-            <a href="order.html">Order Delivery</a>
-          </div>
-        </nav>
+          <!--http://www.htmlgoodies.com/tutorials/buttons/article.php/3478871
+              Works but is probably not best method?  -->
 
-<!-- MAIN SECTION................................. -->
-        <div class = "row" id ="menu-cart">MENU 
-          <div class = "col-lg-6" id = "menuSide">
-
-            <h2>MENU</h2>
-<!--  CARDS.............................................................. -->
-          <div id = "menu-cards" class = "row">
-
-            <div class="card" class = "col-md-3">
+<!-- two columns: one for menu and one for cart card -->
+<!-- inside menu have two columns for cards -->
+<!-- inside cart -->
+<!-- MENU ..................................-->
+      <div class = "row">
+    <div class = "col-lg-6" id = "menu">
+      <h2>MENU</h2>
+      <div class = "row" id "topRow">
+        <div class="card" class = "col-md-6">
               <img class="card-img-top" src="img/burger.jpg" alt="Card image cap">
               <div class="card-block" id = "royale">
                 <h4 class="card-title">Royale with Cheese</h4>
-                <p class="card-text">price here</p>
-                <a href="#" class="btn red">Add To Order</a>
+                <p class="card-text" id = "8.99">$8.99</p>
+                <a class="btn red" id = "orderRoyale">Add To Order</a>
               </div>
-            </div>
+        </div>
 
-            <div class="card" class = "col-md-3">
+            <div class="card" class = "col-md-6">
               <img class="card-img-top" src="img/pizza.jpg" alt="Card image cap">
               <div class="card-block" id = "pizza">
                 <h4 class="card-title">Arugula Pie</h4>
-                <p class="price">price here</p>
-                <a href="#" class="btn red">Add To Order</a>
+                <p class="price" id = "11.99">$11.99</p>
+                <a class="btn red" id = "orderPizza">Add To Order</a>
               </div>
             </div>
-
-            <div class="card" class = "col-md-3">
+      </div>
+      <div class = "row" id "lowerRow">
+        <div class="card" class = "col-md-6">
               <img class="card-img-top" src= "img/ribs.jpg" alt="Card image cap">
               <div class="card-block">
                 <h4 class="card-title">Smoked Swine</h4>
-                <p class="card-text">price here</p>
-                <a href="#" class="btn red">Add To Order</a>
+                <p class="card-text">$14.99</p>
+                <a class="btn red" id = "orderRibs">Add To Order</a>
               </div>
             </div>
 
-            <div class="card" class = "col-md-3">
+            <div class="card" class = "col-md-6">
               <img class="card-img-top" src="img/ice_cream.jpg" alt="Card image cap">
               <div class="card-block">
                 <h4 class="card-title">Ice Cream Biscuit</h4>
-                <p class="card-text">price here</p>
-                <a href="#" class="btn red">Add To Order</a>
+                <p class="card-text" id = "7.99">$7.99</p>
+                <a class="btn red"id = "orderIC" >Add To Order</a>
               </div>
             </div>
-            </div><!-- end of "menu-cards"-->
-          
-
-        
-<!-- CART.................................................................... --> 
-
-    <div class = "col-lg-6" id = "orderSide">
-      <h2>ORDER</h2>
+      </div>
     </div>
-       
-          
 
-          
+<!-- CART ........................................-->
+    <div class = "col-lg-6" id = "cart">
+
+      <h2>CART</h2>
+      <table class="table table-striped">
+          <thead>
+            <tr>
+              <th>Item</th>
+              <<th>Quantity</th>
+              <th>Price</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr id = "cartData">
+              <td id = "cartItem">item here</td>
+              <<td id = "cartQty">Quantity</td>
+              <td id = "cartPrice">price here</td>
+            </tr>
+          </tbody>
 
 
+<!--DELIVERY FORM -->
+        <h2>Delivery Info</h2>
+          <form action="/action_page.php">
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+            </div>
+            <div class="form-group">
+              <label for="pwd">Password:</label>
+              <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd">
+            </div>
+            <button type="submit" class="btn btn-default">Submit</button>
+          </form>
 
-</div> <!-- end of row menu&cart-->
-<!-- FOOTERS.................................................................. -->
 
-      <footer id = "footer">
+    </div>
+</div><!-- END OF CART ORDER COLUMN -->
+
+<!-- FOOTERS....................................... -->
+      <!-- <footer class = "row" id = "footer">
           <div class = "marginal">
             <div class="flex-container">
                 <div class="flex-item">
@@ -98,21 +129,21 @@
                   <a href="order.html">Order Delivery</a>
                 </div>
             </div>
-          </div>
-      </footer>
-      <footer id = "copyright"onloadedmetadata="">
-        <!--  copyright info-->
-            <p id = "copyrightText"> &copy; 2017 Galvanize Delivers<p>
-      
-      </footer>
+        </div>
+      </footer> -->
+      <!-- <footer class = "row" id = "copyright"onloadedmetadata="">
+         copyright info
+        <p id = "copyrightText"> &copy; 2017 Galvanize Delivers<p>
 
-    </div> <!-- END OF CONTAINER FLUID
- -->
+      </footer> -->
 
 
+ </div><!--THIS IS THE END OF CONTAINER FLUID-->
 
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+ <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/myOrder.js" charset="utf-8"></script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
 
