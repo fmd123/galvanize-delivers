@@ -1,0 +1,47 @@
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body{
+	padding-top:30px;
+	/*padding-top is so body isn't hidden a little behind navbar*/
+
+}
+
+.navbar-inverse {
+	background: cornflowerblue;
+
+}
+
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
+    color: #fff;
+    background-color: #21357d;
+}
+
+
+.navbar-inverse .navbar-brand{
+	color:white;
+}
+
+.navbar-inverse .navbar-nav>li>a{
+	color: white;
+}
+/*look in inspector and grab the selector that will give you what you want*/
+
+
+
+#activeFooter{
+	background-color: cornflowerblue;
+	color: white;
+}
+#copyright{
+	background-color: #21357d;
+	color: white;
+}
