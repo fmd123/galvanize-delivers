@@ -2,65 +2,111 @@
 <html>
 
 <head>
-	<title>Grid tutorial WDB2</title>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+	<title>G Delivers 2</title>
 
+<!--Bootstrap css  -->
 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-
+<!--Font Awesome  -->
+	  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<!--My stylesheet  -->
 	<link rel="stylesheet" type="text/css" href="css/index2.css">
-	<!-- Need font awesome -->
 </head>
 
 <body>
-<nav class = "navbar navbar-inverse navbar-fixed-top">
+	<nav class = "navbar navbar-inverse navbar-fixed-top">
+		<div class = "container-fluid">
+			<div class = "navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#gDeliver-collapse" aria-expanded="false">
+		        <span class="sr-only">Toggle navigation</span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		      	</button>
+				<!-- <a href="#" class = "navbar-brand">Galvanize Delivers</a> -->
+			</div>
+			<div class="collapse navbar-collapse" id="gDeliver-collapse">
+				<ul class = "nav navbar-nav">
+					<li class = "active"><a href="#">Galvanize Delivers</a></li>
+					<!-- <li ><a href="#">Contact</a></li> -->
+
+				</ul>
+				<ul class = "nav navbar-nav navbar-right">
+					<li><a href="#">Order</a></li>
+					<li><a href="#">Delivery</a></li>
+				</ul>
+		</div>
+
+	</nav>
+<!--Nav Bar End  -->
+<!--Begin hero image/order now button  -->
 	<div class = "container-fluid">
-		<div class = "navbar-header">
-			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#gDeliver-collapse" aria-expanded="false">
-	        <span class="sr-only">Toggle navigation</span>
-	        <span class="icon-bar"></span>
-	        <span class="icon-bar"></span>
-	        <span class="icon-bar"></span>
-	      	</button>
-			<!-- <a href="#" class = "navbar-brand">Galvanize Delivers</a> -->
+	<div class = "row" id = "hero">
+		<div class = "col-md-12">
+			<div id = "hero-text">
+				<h1>Galvanize Delivers</h1>
+				<h2>Fine Dining, Delivered</h2>
+
+				<FORM METHOD="get" ACTION="order.html">
+						<INPUT class = "orderBtn" TYPE="submit" VALUE="Place an Order">
+				</FORM>
+							<!-- <button class = "btn btn-default btn-lg">Order Now</button> -->
+			</div>
 		</div>
-		<div class="collapse navbar-collapse" id="gDeliver-collapse">
-			<ul class = "nav navbar-nav">
-				<li class = "active"><a href="#">Galvanize Delivers</a></li>
-				<!-- <li ><a href="#">Contact</a></li> -->
 
-			</ul>
-			<ul class = "nav navbar-nav navbar-right">
-				<li><a href="#">Order</a></li>
-				<li><a href="#">Delivery</a></li>
-			</ul>
 	</div>
-
-</nav>
-
-<div class = "container-fluid">
-<div class = "row" id = "hero">
-	<div class = "col-md-12">
-		<div id = "hero-text">
-		<h1>Galvanize Delivers</h1>
-		<h2>tagline...</h2>
-		<button class = "btn btn-default btn-lg">Order Now</button>
-		<!-- put the big photo here as background and add button in middle -->
-		</div>
-	</div>
-
-</div>
+	<!-- End Hero -->
+	<!-- Begin Main Info Section -->
 	<div class = "row">
-		<div class = "col-md-4 col-sm-4 col-xs-1" id = "a">here</div>
-		<div class = "col-md-4 col-sm-4 col-xs-1" id = "b">are</div>
-		<div class = "col-md-4 col-sm-4 col-xs-1" id = "c">three columns</div>
-	</div>
+		<div class = "col-md-4 col-sm-4 col-xs-12" id = "shop">
+			<h3><i class="fa fa-shopping-basket" aria-hidden="true"></i> Shop Online</h3>
+			<p class = "sell">Using our convenient web app, you'll get all the power of gFood without having to call your order in. Order in your pajamas, order 24 hours a day, order on Christmas, we're here to serve you.</p>
+		</div>
+		<div class = "col-md-4 col-sm-4 col-xs-12" id = "fast">
+			<h3><i class="fa fa-truck" aria-hidden="true"></i> Fast Delivery</h3>
+			<p class = "sell">You've never seen ordering this quick. Our proprietary ordering rocket ship delivery team allows you to spend less time being hungry, and more time doing what matters most to you. We'd ask what that is, but gFood respects your privacy.</p>
+		</div>
+		<div class = "col-md-4 col-sm-4 col-xs-12" id = "great">
+			<h3><i class="fa fa-usd" aria-hidden="true"></i> Great Deals</h3>
+			<p class = "sell">Money: You've got it, we want it. But let it never be said we're not incredibly fair! Burger sales? Check. Pizza sales? Check. Burger and pizza sales?? Check, check, check! We seriously can't stop making deals.</p>
+		</div>
+
+	</div> <!--END OF MAIN ROW-->
+	</div> <!--END OF CONTAINER FLUID-->
+	<!--End Main Info Section  -->
+	<!--Begin Footer  -->
+<div class = "container-fluid">
+<footer>
+
+		<div id = "activeFooter" class = "row">
+			<div class = "col-md-4 col-sm-4 col-xs-12">
+				<p >Galvanize Delivers</p>
+				<p>Fine Dining, Delivered.</p>
+			</div>
+			<div class = "col-md-4 col-sm-4 col-xs-12">
+				<!-- This is intentionally empty -->
+			</div>
+			<div class = "col-md-4 col-sm-4 col-xs-12">
+				<p><a href="index2.html">Home</a></p>
+				<p><a href="order2.html">Order Delivery></p>
+			</div>
+		</div>
+		
+		<div id = "copyright" class = "row">
+			<div class = "col-md-6 col-sm-6 col-xs-12">
+				<p> &copy; 2017 Galvanize Delivers</p>
+			</div>
+
+		</div>
+
+</footer>
 </div>
 
 
-
-
-
-
+<!--...............................................  -->
 	<script
   src="https://code.jquery.com/jquery-3.2.1.min.js"
   integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="

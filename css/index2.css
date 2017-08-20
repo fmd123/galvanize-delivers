@@ -1,8 +1,18 @@
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
 
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
 
 body{
-	padding-top:70px;
+	padding-top:30px;
 	/*padding-top is so body isn't hidden a little behind navbar*/
+
 }
 
 .navbar-inverse {
@@ -25,13 +35,14 @@ body{
 }
 /*look in inspector and grab the selector that will give you what you want*/
 
-/*#hero{
-	background: url();
+#hero{
+	background-image: url("../img/hero.jpg");
 	background-size: cover;
 	background-position: center;
-	not sure if this right for a div
+	margin-top 0;
 
-}*/
+
+}
 
 #hero-text{
 	text-align:center;
@@ -43,9 +54,19 @@ body{
 
 
 
-#a {
-	height: 900px;
+#shop {
 
-	background-color: yellow;
-	border 1px solid resd;
+}
+
+#activeFooter{
+	background-color: cornflowerblue;
+	color: white;
+}
+#copyright{
+	background-color: #21357d;
+	color: white;
+}
+
+footer {
+
 }
