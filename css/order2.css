@@ -35,8 +35,21 @@ body{
 }
 /*look in inspector and grab the selector that will give you what you want*/
 
+#hero{
+	background-image: url("../img/hero.jpg");
+	background-size: cover;
+	background-position: center;
+	margin-top 0;
+}
 
+#hero-text{
+	text-align:center;
+	padding: 10%;
 
+}
+.here{
+  height:100px;
+}
 #activeFooter{
 	background-color: cornflowerblue;
 	color: white;
@@ -44,4 +57,8 @@ body{
 #copyright{
 	background-color: #21357d;
 	color: white;
+}
+
+footer {
+
 }
