@@ -10,7 +10,7 @@ html {
 }
 
 body{
-	padding-top:30px;
+	padding-top:70px;
 	/*padding-top is so body isn't hidden a little behind navbar*/
 
 }
@@ -57,24 +57,38 @@ body{
 .flexcontainer {
   display: flex; /* or inline-flex */
   flex-wrap: wrap;
-  justify-content: space-between;
-  margin: 10px;
+  justify-content: flex-start;
+  /*margin: 10px;*/
 }
 
 /*STYLES FOR MENU......................................................*/
 .menuGrid{
 	width:45%;
-	height:200px;
-	background-color: blue;
+	/*height:200px;*/
+	/*background-color: blue;*/
 }
-.cartOrder{
-	width:45%;
-	height:200px;
-	background-color: yellow;
+.thumbnail{
+	display: inline-flex;
+	padding-bottom: 20px;
+	margin-bottom: 20px;
+	margin:20px auto;
+	width: 45%;
+
+}
+.float{
+	float:left;
+}
+
+.card-img-top{
+	width: 100px;
 }
 /*STYLES FOR CART......................................................*/
 
-
+.cartOrder{
+	width:45%;
+	/*height:200px;*/
+	/*background-color: yellow;*/
+}
 /*STYLES FOR FOOTER.....................................................*/
 #activeFooter{
 	background-color: cornflowerblue;

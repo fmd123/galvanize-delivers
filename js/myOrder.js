@@ -1,5 +1,4 @@
-
-
+$(document).ready(() => {
 
 
 
@@ -30,6 +29,7 @@ $("#orderIC").on("click", function(){
 });
 
 
+}//END OF DOCUMENT READY
 
 // WHEN DO I WANT to DO THE CALCULATIONS?
 //The .text() method cannot be used on form inputs or scripts. To set or get the text value of input or textarea elements, use the .val() method. To get the value of a script element, use the .html() method. This is from: http://api.jquery.com/text/

@@ -30,7 +30,7 @@
 			</div>
 			<div class="collapse navbar-collapse" id="gDeliver-collapse">
 				<ul class = "nav navbar-nav">
-					<li><a href="#">Galvanize Delivers</a></li>
+					<li><a href="index2.html">Galvanize Delivers</a></li>
 					<!-- <li ><a href="#">Contact</a></li> -->
 
 				</ul>
@@ -42,25 +42,107 @@
 		</div>
 
 	</nav>
-<!--Nav Bar End  -->
-
-
-	
-
-
-
-
-
 
 	</div> <!--END OF CONTAINER FLUID-->
 <!-- END OF NAV............................END OF NAV.........................END OF NAV-->
 <!--BEGIN MAIN ...........................MAIN............................MAIN -->
 
 	
-	<main class = "flexcontainer">
-		<div class = menuGrid></div>
-		<div class = "cartOrder"></div>
+	<main class = "flexcontainer"> 
+		<div class = "menuGrid">
+			<h2>MENU</h2>
+				<!-- ......................................................... -->
+				<div class="card thumbnail">
+	              <img class="card-img-top" src="img/burger.jpg" alt="Card image cap">
+	              <div class="card-block" id = "royale">
+	                <h4 class="card-title">Royale with Cheese</h4>
+	                <p class="card-text" id = "8.99">$8.99</p>
+	                <a class="btn red" id = "orderRoyale">Add To Order</a>
+	              </div>
+	            </div>
+	    		<!-- ........................................................ -->
 
+	            <div class="card thumbnail">
+	              <img class="card-img-top" src="img/pizza.jpg" alt="Card image cap">
+	              <div class="card-block" id = "pizza">
+	                <h4 class="card-title">Arugula Pie</h4>
+	                <p class="price" id = "11.99">$11.99</p>
+	                <a class="btn red" id = "orderPizza">Add To Order</a>
+	              </div>
+	            </div>
+	            <!-- ........................................................... -->
+	            <div class="card thumbnail">
+	              <img class="card-img-top" src= "img/ribs.jpg" alt="Card image cap">
+	              <div class="card-block">
+	                <h4 class="card-title">Smoked Swine</h4>
+	                <p class="card-text">$14.99</p>
+	                <a class="btn red" id = "orderRibs">Add To Order</a>
+	              </div>
+	            </div>
+	            <!-- ............................................................... -->
+	            <div class="card thumbnail">
+	              <img class="card-img-top" src="img/ice_cream.jpg" alt="Card image cap">
+	              <div class="card-block">
+	                <h4 class="card-title">Ice Cream Biscuit</h4>
+	                <p class="card-text" id = "7.99">$7.99</p>
+	                <a class="btn red"id = "orderIC" >Add To Order</a>
+	              </div>
+	            </div>
+	            <!-- ............................................................... -->
+		</div><!-- END OF  menuGrid-->
+		<div class = "cartOrder">
+		<h2>ORDER</h2>
+<!-- RECEIPT TABLE................................................................... -->
+		<table class="table table-striped">
+			  <thead>
+			    <tr>
+			      
+			      <th>Item</th>
+			      <th>Quantity</th>
+			      <th>Price</th>
+			    </tr>
+			  </thead>
+			  <tbody>
+			    <tr>
+			      
+			      <td>x</td>
+			      <td>Y</td>
+			      <td>Z</td>
+			    </tr>
+			    
+			    <tr>
+			      
+			      <td>X</td>
+			      <td>Y</td>
+			      <td>Z</td>
+			    </tr>
+			  </tbody>
+		</table>
+			
+<!-- END OF ORDER TABLE................................................................ -->
+<!-- BEGIN ORDER FORM................................................................... -->
+		<form>
+		  <div class="form-group">
+			    <label for="name" type = "text">Name:</label>
+			    <input type="name" class="form-control" id="name">
+		  </div>
+		  <div class="form-group">
+			    <label for="phone" type = "">Phone Number:</label>
+			    <input type="phone" class="form-control" id="phone">
+		  </div>
+		  <div class="form-group">
+			    <label for="address" type = "">Address:</label>
+			    <input type="address" class="form-control" id="address">
+		  </div>
+		  <div class="checkbox">
+		    	input type="checkbox"> Remember me</label>
+		  </div>
+		  <button type="submit" class="btn btn-default">Submit</button>
+	</form>
+<!-- END OF ORDER FORM -->
+		</div><!-- END of cartOrder -->
+
+		
 
 	</main>
 <!-- END OF MAIN CONTAINER FLUID -->
@@ -99,5 +181,6 @@
   integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
   crossorigin="anonymous"></script>
 	<script type="text/javascript" src = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src= "js/myOrder.js"></script>
 </body>
 </html>
