@@ -49,6 +49,9 @@ body{
 	padding: 10%;
 
 }
+/*.float{
+	float: left;
+	})*/
 
 #activeFooter{
 	background-color: cornflowerblue;
@@ -59,6 +62,3 @@ body{
 	color: white;
 }
 
-footer {
-
-}
