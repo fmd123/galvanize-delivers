@@ -25,17 +25,25 @@ $(document).ready(() => {
 
 //function that is called when target clicked
 $('.card .btn').click((event)=>{
+  debugger;
   //Selector is for ALL card buttons
   event.preventDefault()//see MDN link above
   let card = $(event.target).parent()
   let price = card.find('.price').text()
-  //console.log(price)
-  let name = card.find('.card-title').text()
-  console.log("ORDER THE ", name );
+  //console.log(typeof price)
+  //price is a string
+  let title = card.find('.card-title').text()
+  console.log("ORDER THE ", title );
   addCart({price, title})
-  //call addCart with an freshly created object argument
+  //call addCart with an freshly created object for argument
+
+//........................................remove after testing!
+parsePrice(price);
+console.log("price " + (typeof price) + price);
+//.................................
 });
 
+//.........................................................
 
  function addCart(item){
     
@@ -46,7 +54,8 @@ $('.card .btn').click((event)=>{
     cartItem.quantity++ }
     else {
       // add to *item* to cart
-      //cartItem is just used to check. Doesn't become 
+      //cartItem is just used to check. 
+      //Doesn't go into cart
       item.quantity = 1
       cart.push(item)
     }
@@ -55,16 +64,68 @@ $('.card .btn').click((event)=>{
     //call the fn that does all the heavy lifting.
     renderCart()
   }
-
+// .....................................................
   function findInCart(title){
     let cartItem = null
+    //is item already in cart or not? use cartItem to check
     for (var i = 0; i < cart.length; i++) {
       if (cart[i].title === title) {
         cartItem = cart[i]
       }
     }
-    console.log(cartItem);
+    console.log("inside findInCart() cartItem = "+ cartItem);
     return cartItem
+
+  }
+//........................................................
+
+function renderCart() {
+    // create a var so can work with table
+    let tbody = $('#orderTable tbody')
+
+    // https://api.jquery.com/remove/
+    //takes element(s) out of DOM
+    tbody.children().remove()
+    tbody.append(`<tr>
+      <td>HERE</td>
+      <td>IT</td>
+      <td>IS</td>
+      </tr>`)
+     // re-render tbody
+     //reset the subtotal
+     let subtotal = 0
+  //   for (item of cart) {
+  //     let price = parsePrice(item.price)
+
+  //     if (item.quantity > 0 ) {
+  //       tbody.append(`<tr>
+  //         <td>${item.title}</td>
+  //         <td>${item.quantity}</td>
+  //         <td>${formatPrice(price)}</td>
+  //         <td><a class="btn btn-primary remove-item" data-title="${item.title}">Remove</a></td>
+  //       </tr>`)
+  //     }
+  //     subtotal += price * +(item.quantity)
+  //   }
+
+  //   // do calculate
+  //   console.log("subtotal", subtotal)
+  //   $('#subtotal').text(formatPrice(subtotal))
+   }
+
+  //.....................................................
+function parsePrice(price) {
+    // remove $ and replace with nothing.
+    //return a floating pt number to renderCart fn.
+    //turn into number
+    return parseFloat(price.replace(/\$/, ''))
+    
+  }
+
+  function formatPrice(price) {
+    //this puts price into table with $ etc.
+    console.log("formatPrice price is", price)
+    return '$' + price.toFixed(2);
   }
 
 

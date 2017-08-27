@@ -47,8 +47,8 @@
 <!-- END OF NAV............................END OF NAV.........................END OF NAV-->
 <!--BEGIN MAIN ...........................MAIN............................MAIN -->
 
-	
-	<main class = "flexcontainer"> 
+
+	<main class = "flexcontainer">
 		<div class = "menuGrid">
 			<h2>MENU</h2>
 				<!-- ......................................................... -->
@@ -93,32 +93,32 @@
 		<div class = "cartOrder">
 		<h2>ORDER</h2>
 <!-- RECEIPT TABLE................................................................... -->
-		<table class="table table-striped">
+		<table class="table table-striped" id 'orderTable'>
 			  <thead>
 			    <tr>
-			      
+
 			      <th>Item</th>
 			      <th>Quantity</th>
 			      <th>Price</th>
 			    </tr>
 			  </thead>
 			  <tbody>
+			  </tbody>
+			   <tfoot>
+			   <!--NEED a place for subtotal inside a foot-->
 			    <tr>
-			      
-			      <td>item</td>
-			      <td>quantity</td>
-			      <td>price</td>
+
+			      <td ></td>
+			      <td ></td>
+			      <td >Subtotal:<div id = "subtotal"></div></td>
+			      <!-- make total include tax but later -->
+			      <td>TOTAL:<div id = "total"></div></td>
 			    </tr>
-			    
-			    <tr>
-			      
-			      <td>X</td>
-			      <td>Y</td>
-			      <td>Z</td>
-			    </tr>
+			   </tfoot>
 			  </tbody>
 		</table>
-			
+
+
 <!-- END OF ORDER TABLE................................................................ -->
 <!-- BEGIN ORDER FORM................................................................... -->
 		<form>
@@ -134,15 +134,12 @@
 			    <label for="address" type = "">Address:</label>
 			    <input type="address" class="form-control" id="address">
 		  </div>
-		  <div class="checkbox">
-		    	input type="checkbox"> Remember me</label>
-		  </div>
 		  <button type="submit" class="btn btn-default">Submit</button>
 	</form>
 <!-- END OF ORDER FORM -->
 		</div><!-- END of cartOrder -->
 
-		
+
 
 	</main>
 <!-- END OF MAIN CONTAINER FLUID -->
@@ -181,6 +178,6 @@
   integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
   crossorigin="anonymous"></script>
 	<script type="text/javascript" src = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-	<script type="text/javascript" src= "js/myOrder.js"></script>
+	<script type="text/javascript" src= "js/tryThis.js"></script>
 </body>
 </html>
