@@ -17,6 +17,7 @@
 </head>
 
 <body>
+  <head>
 	<nav class="navbar navbar-inverse navbar-fixed-top">
 		<div class="container-fluid">
 			<div class="navbar-header">
@@ -44,6 +45,7 @@
 	</nav>
 
 	</div>
+</head>
 	<!--END OF CONTAINER FLUID-->
 	<!-- END OF NAV............................END OF NAV.........................END OF NAV-->
 	<!--BEGIN MAIN ...........................MAIN............................MAIN -->
@@ -53,9 +55,8 @@
 		<div class="menuGrid">
 			<h2>MENU</h2>
 			<!-- ......................................................... -->
-			<div class="card thumbnail flexcontainer">
+			<div class="card thumbnail">
 				<img class="card-img-top" src="img/burger.jpg" alt="Card image cap">
-
 				<div class="card-block" id="royale">
 					<h4 class="card-title">Royale with Cheese</h4>
 					<p class="card-text price">$8.99</p>
@@ -64,7 +65,7 @@
 			</div>
 			<!-- ........................................................ -->
 
-			<div class="card thumbnail flexcontainer">
+			<div class="card thumbnail">
 				<img class="card-img-top" src="img/pizza.jpg" alt="Card image cap">
 				<div class="card-block" id="pizza">
 					<h4 class="card-title">Arugula Pie</h4>
@@ -73,7 +74,7 @@
 				</div>
 			</div>
 			<!-- ........................................................... -->
-			<div class="card thumbnail flexcontainer">
+			<div class="card thumbnail">
 				<img class="card-img-top" src="img/ribs.jpg" alt="Card image cap">
 				<div class="card-block">
 					<h4 class="card-title">Smoked Swine</h4>
@@ -82,7 +83,7 @@
 				</div>
 			</div>
 			<!-- ............................................................... -->
-			<div class="card thumbnail flexcontainer">
+			<div class="card thumbnail">
 				<img class="card-img-top" src="img/ice_cream.jpg" alt="Card image cap">
 				<div class="card-block">
 					<h4 class="card-title">Ice Cream Biscuit</h4>
@@ -161,19 +162,43 @@
 				<!--BUTTON.......................................-->
 				<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal" id="orderBtn">Place Order</button>
 			</form>
-
-
-
-
-
-			<!-- :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: -->
-			<!-- END of cartOrder -->
 			<!--  POPUP-->
-			<aside>
-				<figure>
-					<img src="http://placehold.it/50x50?text=ok" />
-					<figcaption>put my error messages here</figcaption>
-					<button>Got It!</button>
+
+			<td id="total"></td>
+<td></td>
+</tr>
+</tfoot>
+</table>
+</section>
+</main>
+
+	<!-- MODAL -->
+	<!-- <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+				<div class="modal-dialog" role="document">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h5 class="modal-title" id="exampleModalLabel">Your Order</h5>
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+						</div>
+						<div class="modal-body"> -->
+	<!-- Put the messages here -->
+	<!-- </div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+						-->
+	<!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+	<!-- </div>
+					</div>
+				</div>
+			</div> -->
+
+
+	<!-- :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: -->
+	</div>
+	<!-- END of cartOrder -->
+
 
 
 	</main>

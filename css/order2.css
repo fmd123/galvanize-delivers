@@ -64,15 +64,20 @@ body{
 /*STYLES FOR MENU......................................................*/
 .menuGrid{
 	width:45%;
+  margin: 10px;
 	/*height:200px;*/
 	/*background-color: blue;*/
 }
+.card{
+  min-width: 150px;
+}
 .thumbnail{
-	display: inline-flex;
+	display: inline-block;
 	padding-bottom: 20px;
 	margin-bottom: 20px;
 	margin:20px auto;
 	width: 45%;
+  min-width: 150px;
 
 }
 .float{
@@ -80,7 +85,14 @@ body{
 }
 
 .card-img-top{
-	width: 100px;
+  display: inline-block;
+	width: 90%;
+  /*height: 100px !important;*/
+}
+
+.card-block{
+  width: 90%
+  display: inline-block;
 }
 /*STYLES FOR CART......................................................*/
 
@@ -89,6 +101,24 @@ body{
 	/*height:200px;*/
 	/*background-color: yellow;*/
 }
+input{
+  margin: 5px;
+  /*width: 50%;*/
+}
+btn btn-primary {
+  margin: 5px;
+}
+
+aside {
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.65);
+  display: none; }
+aside.active { display: block; }
+aside figure { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background-color: white; padding: 25px; border: 3px solid black; box-shadow: 0 0 5px black; text-align: center; }
+aside figure img { border-radius: 50%; margin-bottom: 10px; }
+aside figure button { margin-top: 30px; border: 0; padding: 8px 20px; border-radius: 10px; background-color: green; color: white; }
 /*STYLES FOR FOOTER.....................................................*/
 #activeFooter{
 	background-color: cornflowerblue;
@@ -107,5 +137,3 @@ body{
   left: 0;
   padding: 1rem;
   width: 100%;
-  
-
